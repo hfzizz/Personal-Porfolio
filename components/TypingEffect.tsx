@@ -30,7 +30,8 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
     const startTimeout = setTimeout(() => {
       const timer = setInterval(() => {
         if (i < text.length) {
-          setDisplayedText((prev) => text.substring(0, i + 1));
+          // Fix: removed unused 'prev' parameter
+          setDisplayedText(() => text.substring(0, i + 1));
           i++;
         } else {
           clearInterval(timer);

@@ -1,6 +1,5 @@
 import { ExperienceItem, ProjectItem, EducationItem, SkillCategory } from './types';
-import { Terminal, Folder, User, Briefcase, Code, GraduationCap, Mail } from 'lucide-react';
-import React from 'react';
+import { Terminal, Folder, Briefcase, Code, GraduationCap, Mail } from 'lucide-react';
 
 export const RESUME_DATA = {
   name: "Mohammad Hafiz Izzuddin Bin Haji Tejuddin",
